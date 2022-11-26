@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <title>Acceso</title>
+</head>
+
+<body>
+    <header id="inicio">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./inicio-juego.html">Juego</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+            <ul>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="acceder.html">Acceder</a></li>
+            </ul>
+        </nav>
+
+        <img src="img/logo-negro.png" alt="logo Universidad del Comahue">
+        <h1>Universidad del Comahue</h1>
+        <h2>Juego de Preguntas</h2>
+    </header>
+
+    <main>
+
+        <form class="form-login" method="get" name="form-acceso">
+            <fieldset class="input-texto">
+                <legend>Acceso</legend>
+
+                    <label for="acceso-usuario">Usuario: </label>
+                    <input type="text" id="acceso-usuario" name="name" placeholder="Usuario" autofocus required>
+                    <p id="mensajeError"></p>
+
+                    <label for="acceso-password">Clave: </label>
+                    <input type="password" id="acceso-password" placeholder="contaseña" required>
+
+            </fieldset>
+
+            <div class="boton">
+                <button type="submit">Ingresar</button>
+            </div>
+        </form>
+        <script src="./app/validacion-acceso.js"></script>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./inicio-juego.html">Juego</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <address><strong>Julieta Gazzin</strong><br>
+            j.gazzin@gmail.com<br>
+            Monseñor Esandi y Ayacucho, 8500 – Viedma, Río Negro, Argentina</address> 
+            
+        <div class="enlace-arriba">
+            <a href="#inicio"><img src="img/flecha.png" alt="flecha" width="30"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+

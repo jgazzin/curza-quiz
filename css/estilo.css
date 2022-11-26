@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(246, 246, 246);
+    font-family: Arial, sans-serif;
+
+}
+
+
+main {
+    width: 70%;
+    margin: 20px auto 20px;
+    padding: 15px 0;
+    min-height: calc(100vh - 320px - 145px);
+}
+
+section {
+    margin: 20px 0;
+}
+
+aside {
+    font-size: 14px;
+    font-style: italic;
+    text-align: right;
+    padding: 15px 0;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h1 {
+    position: relative;
+    animation-name: bibrar;
+    animation-duration: .2s;
+    animation-iteration-count: 14;
+    animation-direction: alternate;
+}
+
+@keyframes bibrar {
+    0% {
+        rotate: 0;
+        transform :  translateX(0);
+    }
+    33% {
+        rotate: -1deg;
+        transform :  translateX(4px);
+    }
+    33% {
+        rotate: 1deg;
+        transform :  translateX(-4px);
+    }
+   
+}
+
+
+p {
+    margin: 10px 0;
+}
+
+header,
+footer {
+    background-color: yellow;
+    padding: 2% 15%;
+}
+
+/* header */
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* min-height: 300px; */
+    width: 100%;
+
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+
+    animation-name: logo;
+    animation-duration: 4s;
+
+}
+
+@keyframes logo {
+    from {
+        transform: rotate(0deg);   
+    }
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* nav */
+nav {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: orangered;
+} 
+
+
+
+/* footer */
+footer {
+    min-height: 145px;
+
+}
+
+footer>address {
+    text-align: center;
+    font-size: .9rem;
+}
+
+.enlace-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+}
+
+/* acerca de*/
+
+.acerca {
+    height: 300px;
+    overflow: scroll;
+}
+
+.acerca h3 {
+    margin: 20px 0;
+}
+
+.acerca p {
+    text-align: justify;
+}
+
+.con_sticky {
+    position: sticky;
+    top: 0px;
+    z-index: -1;
+    font-weight: bold;
+}
+
+figure {
+    float:left;
+    margin: 0 20px 10px 0;
+    box-shadow: 3px 3px 5px 1px gray;
+    width: 50%;
+
+    position: relative;
+    animation: 2s reverse aparecer;
+
+    z-index: -1;
+}
+
+@keyframes aparecer {
+    from {
+        right : 0;
+        rotate: 0;
+    }
+    to {
+        right : 500px;
+        rotate : 400deg;
+    }
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* juego */
+section ol {
+    margin-left: 5%;
+}
+
+/* Registros */
+
+table {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+thead {
+    background-color: black;
+    color: white;
+
+}
+
+th,
+td {
+    border:1px solid black;
+    padding: 5px;
+}
+
+.jugador {
+    vertical-align: top;
+}
+
+.aliniear_left {
+    text-align: left;
+}
+
+
+
+/* form  */
+
+form {
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px grey;
+
+}
+
+.form-login {
+    margin: auto;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+
+fieldset {
+    margin: 20px 0;
+    padding: 20px;
+    border: none;
+
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.tipo-radio {
+    display: flex;
+    justify-content: space-around;
+}
+
+label,
+input {
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.boton {
+    margin: 0 20%;
+}
+
+form button {
+    width: 100%;
+
+    margin: 20px;
+    background-color: yellow;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px grey;
+
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    
+}
+
+
+form button:hover {
+    background-color: orange;
+}
+
+/* -- RESPONSIVO -- */
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 90%;
+        margin: 370px auto 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    header,
+    footer {
+    padding: 2% 5%;
+    }
+
+    figure {
+        float:none;
+        margin: 0 auto 20px;
+        width: 100%;
+    
+    }
+}
+
+
+
+/* --- validar --- */
+.input__er {
+    background-color: rgba(228, 135, 135, 0.5);
+}
+
+.mensaje__er {
+    color: red;
+    font-size: 12px;
+}

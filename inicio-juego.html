@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curza Quiz</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+
+  <body>
+    <main id="#">
+      <div class="container">
+        <div id="home" class="flex-center flex-column">
+          <img class="logo" src="../img/logo-unco.png" alt="logo curza">
+          <h2>Curza Quiz</h2>
+  
+          <form>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="username">
+            <button
+              type="submit"
+              class="btn"
+              id="saveNameBtn"
+              onclick="setJugador(event)"
+              disabled>
+              Jugar
+            </button>
+          </form>
+  
+          <!-- <a class="btn" href="screems/game.html">Jugar</a> -->
+          <a class="btn" href="./screems-juego/registros.html">Puntajes</a>
+  
+            <div id="reglas" class="reglas">
+                <h3>Reglas de juego</h3>
+              <p>¡Demuestra cuanto sabes para subir de nivel!</p>
+              <p>Cada jugada consta de 4 preguntas elegidas al azar.</p>
+              <p>En cada jugada se acumulan los puntos ganados en las respuestas correctas.</p>
+              <p>Gana el jugador que primero llega los 100 puntos.</p>
+              <p>(*) Los puntajes se pueden limpiar en cualquier momento para inicier un nuevo juego.</p>
+              <p>Se puede jugar de forma individual o con jugadores.</p>
+            </div>
+        </div>
+      </div>
+      
+      <script src="./app/index.js"></script>
+    </main>
+    
+    <footer>
+      <nav>
+          <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./inicio-juego.html">Juego</a></li>
+              <li><a href="../acercade.html">Acerca de</a></li>
+              <li><a href="../contacto.html">Contacto</a></li>
+          </ul>
+      </nav>
+
+      <address><strong>Julieta Gazzin</strong><br>
+          j.gazzin@gmail.com<br>
+          Monseñor Esandi y Ayacucho, 8500 – Viedma, Río Negro, Argentina</address> 
+
+      <div class="enlace-arriba">
+          <a href="#"><img src="../img/flecha.png" alt="flecha" width="30"></a>
+      </div>
+  </footer>
+  </body>
+</html>

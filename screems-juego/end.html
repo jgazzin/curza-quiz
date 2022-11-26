@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curza Quiz - Gran jugada!</title>
+    <link rel="stylesheet" href="../css/app.css">
+  </head>
+  <body>
+    <main id="#">
+      <div class="container">
+        <div id="end" class="flex-center flex-column">
+          <div id="hud-item" class="flex-center">
+            <img class="logo" src="../img/logo-unco.png" alt="logo curza">
+            <p class="hud-prefix">
+              Jugador:
+            </p>
+  
+            <h1 class="hud-main-text" id="name">
+              name
+            </h1>
+  
+          </div>
+          <p class="hud-prefix">
+            Puntos acumulados:
+          </p>
+          <h1 id="finalScore">0</h1>
+
+          <button
+            type="submit"
+            class="btn"
+            id="saveNameBtn"
+            onclick="saveHighScore(event)">
+            guardar
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- libreria sweetalert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../app/end.js"></script>
+
+    <footer>
+      <nav>
+          <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../inicio-juego.html">Juego</a></li>
+              <li><a href="../acercade.html">Acerca de</a></li>
+              <li><a href="../contacto.html">Contacto</a></li>
+          </ul>
+      </nav>
+
+      <address><strong>Julieta Gazzin</strong><br>
+          j.gazzin@gmail.com<br>
+          Monseñor Esandi y Ayacucho, 8500 – Viedma, Río Negro, Argentina</address> 
+
+      <div class="enlace-arriba">
+          <a href="#"><img src="../img/flecha.png" alt="flecha" width="30"></a>
+      </div>
+  </footer>
+  </body>
+</html>

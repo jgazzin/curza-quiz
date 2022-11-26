@@ -42,16 +42,6 @@ fetch("questions.json")
     })
     .then((loadedQuestions) => {
         questions = loadedQuestions;
-        // carga solo 4
-        // let selectQuestions = [];
-        // for (let i = 0; i < 4; i++) {
-        //     e = Math.floor(Math.random()*17);
-        //     selectQuestions [i] = questions[e]; 
-        //     questions.splice(questions[e],1)
-        //     // console.log(questions)
-        // }
-        // questions = selectQuestions;
-        // console.log(questions)
         startGame();
     })
     .catch((err) => {

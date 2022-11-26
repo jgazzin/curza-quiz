@@ -7,14 +7,12 @@
 body {
     background-color: rgb(246, 246, 246);
     font-family: Arial, sans-serif;
-
 }
 
 
 main {
     width: 70%;
     margin: 20px auto 20px;
-    padding: 15px 0;
     min-height: calc(100vh - 320px - 145px);
 }
 
@@ -333,7 +331,7 @@ form button:hover {
 @media (max-width: 480px) {
     main {
         width: 90%;
-        margin: 370px auto 0;
+        margin: 0 auto 0;
     }
 
     nav ul {

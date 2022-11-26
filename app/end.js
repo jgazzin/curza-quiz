@@ -16,7 +16,7 @@ nameJugador.innerHTML = jugadorActual.name;
 // nivel
 if (jugadorActual.score < 10) {
     Swal.fire({
-        icon: 'warning',
+        icon: 'error',
         title: 'Tendrás que esforzarte un poco más ' + jugadorActual.name,
         showConfirmButton: true,
       })
